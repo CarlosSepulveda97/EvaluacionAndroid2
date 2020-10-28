@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HOME_ACT">
+
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="414dp"
+        android:layout_height="520dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ViewFlipper>
+
+    <TableLayout
+        android:layout_width="429dp"
+        android:layout_height="229dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="205dp"
+                android:layout_height="121dp"
+                app:srcCompat="@drawable/perfil_men" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/dinero_men" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="89dp">
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="204dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/secure_men" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="221dp"
+                android:layout_height="94dp"
+                app:srcCompat="@drawable/info_men" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

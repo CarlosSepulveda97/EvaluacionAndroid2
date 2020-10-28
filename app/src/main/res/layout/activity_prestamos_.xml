@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".Prestamos_Act">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="187dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dinero" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="292dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="292dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="106dp"
+        android:text="Calcular Prestamo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Calcular Deudas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="120dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

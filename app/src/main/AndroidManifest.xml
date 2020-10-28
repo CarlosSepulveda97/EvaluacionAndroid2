@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Clientes_Act"></activity>
+        <activity android:name=".Prestamos_Act" />
+        <activity android:name=".Seguridad_Act" />
+        <activity android:name=".Maps_Act" />
+        <activity android:name=".Info_Act" />
+        <activity android:name=".HOME_ACT" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
