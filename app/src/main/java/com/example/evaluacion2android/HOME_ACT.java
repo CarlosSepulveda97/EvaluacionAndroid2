@@ -64,6 +64,9 @@ public class HOME_ACT extends AppCompatActivity{
 
         clientes.add(new Cliente("Axel",750000));
         clientes.add(new Cliente("Roxana",900000));
+        clientes.add(new Cliente("Betzabe",0));
+        clientes.add(new Cliente("Matias",0));
+
 
         prestamos.add(new Prestamo("CREDITO HIPOTECARIO", 1000000, 12));
         prestamos.add(new Prestamo("CREDITO AUTOMOTRIZ", 500000, 8));
