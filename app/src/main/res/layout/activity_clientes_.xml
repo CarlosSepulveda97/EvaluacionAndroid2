@@ -50,16 +50,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Eliminar Cliente"
+            android:hint="Ingrese Salario"
             android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Actualizar Cliente"
-            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -76,24 +69,28 @@
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="guardar"
             android:text="Guardar Cliente" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="mostrar"
             android:text="Mostrar Cliente" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="eliminar"
             android:text="Eliminar Cliente" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="modificar"
             android:text="Actualizar Cliente" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

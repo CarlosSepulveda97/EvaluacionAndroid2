@@ -7,13 +7,15 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private ProgressBar progress;
     private Button btn;
-
+    private EditText nombre, pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +25,22 @@ public class MainActivity extends AppCompatActivity {
 
         progress = (ProgressBar)findViewById(R.id.progressBar);
         btn = (Button)findViewById(R.id.button);
-
+        nombre = (EditText) findViewById(R.id.editTextTextPersonName);
+        pass = (EditText) findViewById(R.id.editTextTextPassword);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                new Task().execute();
+                if (nombre.getText().toString().equalsIgnoreCase("android")
+                        && pass.getText().toString().equals("123")){
+                    new Task().execute();
+                }else {
+                    Toast.makeText(MainActivity.this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
+                    nombre.setText("");
+                    pass.setText("");
+                }
+
             }
         });
 

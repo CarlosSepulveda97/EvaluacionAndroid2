@@ -4,11 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-public class HOME_ACT extends AppCompatActivity {
+import java.util.ArrayList;
+
+import Models.Cliente;
+import Models.Prestamo;
+
+public class HOME_ACT extends AppCompatActivity{
 
     private ViewFlipper vf;
     private long[] images = {R.mipmap.a, R.mipmap.b, R.mipmap.c};
@@ -52,7 +58,20 @@ public class HOME_ACT extends AppCompatActivity {
     }
 
     public void prestamos(View view){
+
+        ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+        ArrayList<Prestamo> prestamos = new ArrayList<Prestamo>();
+
+        clientes.add(new Cliente("Axel",750000));
+        clientes.add(new Cliente("Roxana",900000));
+
+        prestamos.add(new Prestamo("CREDITO HIPOTECARIO", 1000000, 12));
+        prestamos.add(new Prestamo("CREDITO AUTOMOTRIZ", 500000, 8));
+
+
         Intent intent = new Intent(this, Prestamos_Act.class);
+        intent.putExtra("listaClientes", clientes);
+        intent.putExtra("listaPrestamos", prestamos);
         startActivity(intent);
     }
 
