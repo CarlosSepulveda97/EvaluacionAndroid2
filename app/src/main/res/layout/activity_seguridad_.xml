@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/candado" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/edit"
         android:layout_width="287dp"
         android:layout_height="51dp"
         android:layout_marginStart="62dp"
@@ -35,9 +35,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="173dp"
-        android:layout_marginLeft="173dp"
-        android:layout_marginTop="345dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,7 +51,8 @@
         android:layout_marginStart="159dp"
         android:layout_marginLeft="159dp"
         android:layout_marginTop="303dp"
+        android:onClick="btn"
         android:text="Encriptar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/edit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
